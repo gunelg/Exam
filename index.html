@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Exam</title>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+        <!-- Icon font -->
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+         <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container wrapper">
+	<div class="row">
+		
+		<div class="col-md-12 first ">	
+			<h3>MY CAPS MAKER</h3>
+				<div class="main text-center">
+					<img onclick="changePictureBorder()" id="shekil" src="img/1.jpg" alt="">
+					<div class="row">
+						<div class="col-md-12 elaveYazi">
+						<span>Bu yazini deyishdire bilersiniz</span>
+					</div>
+					</div>
+					
+				</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="form-group">
+    			<input type="text" class="form-control input" id="textyaz" placeholder="">
+  			</div>
+		</div>
+		</div>
+	<div class="row">
+		<div class="col-md-3 pull-right">
+			<button onclick="addtext()" type="button" class="btn btn-danger">TEXTİ DƏYİŞ</button>
+		</div>
+		<script type="text/javascript">
+		function addtext(){
+			document.getElementById("textyaz").addEventListener("click", addtext()).innerHTML="SALAM";
+		}
+		</script>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="form-group">
+    			<input type="text" class="form-control input" id="changePic" placeholder="" source="img/1.jpg"> 	
+  			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 pull-right">
+			<button onclick="changePicture()" type="button" class="btn btn-danger">ŞƏKLİ DƏYİŞ</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+	function changePicture(){
+		document.getElementById("shekil").addEventListener("click", changePicture()).src="img/exam.jpg";
+	}
+	</script>
+	<div class="row">
+	<div class="height"></div>
+		<div class="col-md-3">
+		
+			<button onclick="changePictureBorder()" ondblclick="myFunction()" id="effekt1" type="button" class="btn btn-danger bigger">Effekt 1</button>
+		</div>
+		<div class="col-md-3">
+			<button type="button" class="btn btn-danger bigger">Effekt 2</button>
+		</div>
+		<div class="col-md-3">
+			<button type="button" class="btn btn-danger bigger">Effekt 3</button>
+		</div>
+		<div class="col-md-3">
+			<button type="button" class="btn btn-danger bigger">Effekt 4</button>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+function changePictureBorder(){
+	document.getElementById("shekil").style.border= "2px solid black";
+}
+function myFunction(){
+	document.getElementById("shekil").addEventListener("click", myFunction()).style.border="none";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿.wrapper{
+	width: 800px;	
+}
+.height{
+	height: 30px;
+}
+.main{
+	width: 800px;
+	height: 400px;
+	margin: 0 auto;
+	z-index: 8;
+	overflow: hidden;
+
+}
+.first h3{
+	color: red;
+}
+
+.main img{
+	overflow: hidden;
+	width: 800px;
+	height: 400px;
+}
+.btn{
+	background: red;
+	color: white;
+	border-radius: 0;
+}
+.input{
+	border: 2px solid black;	
+}
+.bigger{
+	width: 100px;
+}
